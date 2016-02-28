@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>Get Sassy</title>
 
-		<meta name="description" content="Introduction to Scalable and Modular Architechture and SASS">
+		<meta name="description" content="Introduction to Scalable and Modular Architechture and Intro toSASS">
 		<meta name="author" content="Jessica Bell">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,7 +15,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="css/style.css">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -41,19 +42,196 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h1>Introduction to SASS</h1>
+					<h3>Making CSS more fun!</h3>
 					<p>
 						<small>Created by <a href="http://sirjessthebrave.github.io/">Jessica Bell</a> / <a href="http://twitter.com/sirjessthebrave">@SirJessTheBrave</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+					<h2>Agenda</h2>
+					<ul>
+						<li class="no-bullets">About Me</li>
+						<li class="no-bullets">What is SMACSS and SASS</li>
+						<li class="no-bullets">SMACCS</li>
+						<li class="no-bullets">SASS</li>
+						<li class="no-bullets">SASS Structure</li>
+						<li class="no-bullets">WORK POINT: Getting set up on Cloud 9</li>
+						<li class="no-bullets">Global</li>
+						<li class="no-bullets">Components</li>
+						<li class="no-bullets">Base</li>
+						<li class="no-bullets">Breaking Down your project</li>
+						<li class="no-bullets">WORK POINT: Change something on your starter!</li>
+					</ul>
 				</section>
+
+			<!-- 	About Me       -->
+				<section>
+					<section>
+						<h2>Who am I?</h2>
+						<img src="img/who.gif">
+						</a>
+					</section>
+					<section>
+						<h2>I'm Jess!</h2>
+						<img src="img/jes.jpg">
+					</section>
+					<section>
+						<p>Front End Developer @<a href="www.repequity.com">RepEquity</a></p>
+						<p>Organizations: DC Tech Meetup, DCFem Tech, Women Who Code, General Assembly, JavaScript Guild, Hear Me Code</p>
+						<ul>
+							<li class="no-bullets org-logo"><img src="img/dctm.jpeg"></li>
+							<li class="no-bullets org-logo"><img src="img/dcft.png"></li>
+							<li class="no-bullets org-logo"><img src="img/whc.png"></li>
+							<li class="no-bullets org-logo"><img src="img/ga.png"></li>
+							<li class="no-bullets org-logo"><img src="img/jsguild-logo.png"></li>
+							<li class="no-bullets org-logo"><img src="img/hmc.png"></li>
+						</ul>
+						<p>Connect with me on Twitter <a href="https://twitter.com/SirJesstheBrave">@SirJessTheBrave</a></p>
+					</section>
+				</section><!-- End About Me       -->
+				<!-- What is SMACSS and SASS -->
+				<section>
+					<section>
+						<h2>SOOO What is SMACSS and SASS?</h2>
+						<ul>
+							<li class="no-bullets half-page-logo"><img src="img/sass.png" class="no-shadow"></li>
+							<li class="no-bullets half-page-logo"><img src="img/smacs.png" class="no-shadow"></li>
+						</ul>
+					</section>
+					<section>
+						<h2>SASS</h2>
+						<p>SASS stands for Syntactically Awesome Style Sheets and is a CSS pre-processor that allows you to use programmatic functionality and better organize your CSS.  SASS takes your .scss files, and compiles them into a normal css style sheet to be included in your project. </p>
+						<p>Read all the SASS documentation at <a href="http://sass-lang.com/">sass-lang.com/</a></p>
+						<img src="img/sass.png" class="no-shadow">
+						<aside class="notes">
+							<p>initially designed by Hampton Catlin and developed by Natalie Weizenbaum.  Sass is a scripting language that is interpreted into CSS. There are 2 syntaxes; .sass and .scss</p>
+						</aside>
+					</section>
+					<section>
+						<h2>SMACSS</h2>
+						<p>SMACSS stands for Scalable and Modular Architecture for CSS and is a way of organizing one's css is a more reusable and sectioned out way.  It is NOT a library or framework, but a way of styling and organizing your css. It was written by Jonathan Snook and is freely available on-line.</p>
+						<p>Get the free SMACS Online book at <a href="https://smacss.com">SMACSS.com</a></p>
+						<img src="img/smacs.png" class="no-shadow">
+					</section>
+				</section><!-- END What is SMACSS and SASS -->
+
+				<!-- 	SMACSS      -->
+				<section>
+					
+
+					<section >
+						<h2>Categories of SMACSS</h2>
+						<div class="left-align-text">
+							<p>
+								<span class="fragment bold">Base: </span>
+								<span class="fragment">The most basic layout of your page/site</span>
+							</p>
+							
+							<p>
+								<span class="fragment bold">Layout: </span>
+								<span class="fragment">Holding one or more 'modular' sections together</span>
+							</p>
+
+							<p>
+								<span class="fragment bold">Module: </span>
+								<span class="fragment">Reusable chunks of code</span>
+							</p>
+
+							<p>
+								<span class="fragment bold">State: </span>
+								<span class="fragment">The look of a particular module while in a certain state such as hover, active, expanded, on mobile</span>
+							</p>
+							<p>
+								<span class="fragment bold">Theme: </span>
+								<span class="fragment">Often not required, but describe how the modules or layouts might look</span>
+							</p>
+						</div>
+					</section>
+
+					<section data-markdown>
+					<h2>Naming Conventions</h2>
+					<p>Naming conventions are very important to writing clean, well understood code.  This is only a sample of how you COULD do naming conventions - the key is to define and stick with a convention</p>
+					<script type="text/template">
+						## Example Naming Conventions
+
+						```
+						<section data-markdown>
+						  ## classes
+						  /* Article Module*/
+						  .article {  }
+
+						  /* Article Module with State */
+						  .article.on-hover{ }
+
+						   ## variables
+						  /*  Colors  */
+						  $c-black: #000000;
+
+						  /*  Base Font Size  */
+						  $base-font-size: 16;
+
+						  /*  Breakpoints  */
+						  $bp-tiny: px-to-em(500);
+
+						   ## Extendables
+						   /*  Clearfix  */
+						   %clearfix { }
+
+						   /*  Fonts  */
+						   %sans-serif { }
+
+						   /*  Icon  */
+						   %facebook { }
+						</section>
+						```
+					</script>
+				</section>
+
+					<section>
+						<h2>Why SMACSS and SASS?</h2>
+						<p>SASS has a folder structure that is parsed out into categories and smaller functional components, which works really well with SMACSS theory.  It also is necessary to have good naming conventions in your variables, mixins, and extendibles for clean, clear, readable SASS</p>
+
+						<aside class="notes">
+							pause for questions 
+						</aside>
+					</section>
+
+					<section>
+						<h2>Time to get Sassy!</h2>
+						<img src="img/sassy.gif">
+					</section>
+				</section><!-- 	SMACSS       -->
+				
+				<!-- SASS -->
+				<section>
+					<section>
+						<h2>The SASS Folder Structure</h2>
+						<ul>
+							<li class="fragment">Global: <span class="fragment"> Your global layout including typography, base form styles, and html elements</span></li>
+							<li class="fragment">Components: <span class="fragment">Your modules, states, and section layouts</span></li>
+							<li class="fragment">Base: <span class="fragment">Your Variables, Mixins, Extendables, and Vendor style sheets (normalize, formalize, reset ect bold</span></li>
+						</ul>
+						<aside class="notes">
+							at this point, pull up project and show them folder structure in a project
+						</aside>
+					</section>
+					<section>
+						<h2>Work Point</h2>
+						<p>Sass requires an installation process as well a compiler such as gulp or grunt to run.  To save time we will be using Cloud 9 to spin up an environment with all the dependencies we will need.</p>
+						<ul>
+							<li>
+								Head to <a href="https://c9.io">c9.io</a> and sign up for a free account
+							</li>
+							<li>more info</li>
+							<li>more info</li>
+						</ul>
+					</section>
+				</section><!-- END SASS -->
+
+
+
 
 				<!-- Example of nested vertical slides -->
 				<section>
