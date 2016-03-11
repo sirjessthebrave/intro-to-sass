@@ -54,12 +54,12 @@
 					<h2>Agenda</h2>
 					<ul>
 						<li class="no-bullets">About Me</li>
-						<li class="no-bullets">What is SMACSS and SASS</li>
-						<li class="no-bullets">SMACCS</li>
+						<li class="no-bullets">What is SASS</li>
 						<li class="no-bullets">SASS</li>
 						<li class="no-bullets">WORK POINT: Getting set up on Cloud 9</li>
 						<li class="no-bullets">SASS Folder Structure: Global, Components, Base</li>
 						<li class="no-bullets">DEMO: Breaking Down your project</li>
+						<li class="no-bullets">SMACCS</li>
 						<li class="no-bullets">WORK POINT: Change something on your starter!</li>
 					</ul>
 				</section>
@@ -92,10 +92,10 @@
 				<!-- What is SMACSS and SASS -->
 				<section>
 					<section>
-						<h2>SOOO What is SMACSS and SASS?</h2>
+						<h2>SOOO What is SASS?</h2>
 						<ul>
 							<li class="no-bullets half-page-logo"><img src="img/sass.png" class="no-shadow"></li>
-							<li class="no-bullets half-page-logo"><img src="img/smacs.png" class="no-shadow"></li>
+							<!-- <li class="no-bullets half-page-logo"><img src="img/smacs.png" class="no-shadow"></li> -->
 						</ul>
 					</section>
 					<section>
@@ -104,20 +104,93 @@
 						<p>Read all the SASS documentation at <a href="http://sass-lang.com/">sass-lang.com/</a></p>
 						<img src="img/sass.png" class="no-shadow">
 						<aside class="notes">
-							<p>initially designed by Hampton Catlin and developed by Natalie Weizenbaum.  Sass is a scripting language that is interpreted into CSS. There are 2 syntaxes; .sass and .scss</p>
+							<p>initially designed by Hampton Catlin and developed by Natalie Weizenbaum.  Sass is a scripting language that is interpreted into CSS. There are 2 syntaxes; .sass and .scss THIS IS NOT A FRAMEWORK ONLY A DEVELOPER TOOL</p>
 						</aside>
 					</section>
+					<section>
+						<h2>Time to get Sassy!</h2>
+						<img src="img/sassy.gif">
+					</section>
+				</section><!-- END What is SMACSS and SASS -->
+				
+				<!-- SASS -->
+				<section>
+					<section>
+						<h2>The SASS Folder Structure</h2>
+						<ul>
+							<li class="fragment">Global: <span class="fragment"> Your global layout including typography, base form styles, and html elements</span></li>
+							<li class="fragment">Components: <span class="fragment">Your modules, states, and section layouts</span></li>
+							<li class="fragment">Base: <span class="fragment">Your Variables, Mixins, Extendables, and Vendor style sheets (normalize, formalize, reset ect bold</span></li>
+						</ul>
+						<aside class="notes">
+							at this point, pull up project and show them folder structure in a project
+						</aside>
+					</section>
+					<section>
+						<h2>How SASS works</h2>
+						<ul>
+							<li>Partials</li>
+							<li>Compiling</li>
+							<li>Import partial</li>
+							<li>Output Style sheet</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Global: styles to be applied globally</h2>
+						<ul>
+							<li>Global Layout</li>
+							<li>Typography</li>
+							<li>Forms</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Components: site specific reusable bits</h2>
+						<p>Modular sections of you page.  Repeatable bits of code.  For example: Header/Footer,  side-bar, display for blog articles, hero images, ect.</p>
+					</section>
+
+					<section>
+						<h2>Base: the functionality of SASS</h2>
+						<ul>
+							<li>Variables</li>
+							<li>Extendables</li>
+							<li>Mixins</li>
+							<li>Vendor</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Breaking down a site</h2>
+						<img src="img/kitten-site-demo.png">
+					</section>
+
+					<section>
+						<h2>Work Point</h2>
+						<p>Sass requires an installation process as well a compiler such as gulp or grunt to run.  To save time we will be using Cloud 9 to spin up an environment with all the dependencies we will need.</p>
+					</section>
+					<section>
+						<ul>
+							<li>
+								Head to <a href="https://c9.io">c9.io</a> and sign up for a free account
+							</li>
+							<li>Fork and clone the <a href="https://github.com/sirjessthebrave/minimal-site">'Minimal Site'</a> repo from my Git Hub account</li>
+							<li>Open up the project in your Cloud9 account and make a change to the SASS files</li>
+							<li>Run the following command in your terminal: sass sass/style.scss stylesheets/style.css</li>
+							<li>Celebrate!</li>
+							<img src="http://i.imgur.com/Cp62j1q.gif" style="margin: 0 auto; display: block;">
+						</ul>
+					</section>
+				</section><!-- END SASS -->
+
+				<!-- 	SMACSS      -->
+				<section>
 					<section>
 						<h2>SMACSS</h2>
 						<p>SMACSS stands for Scalable and Modular Architecture for CSS and is a way of organizing one's css is a more reusable and sectioned out way.  It is NOT a library or framework, but a way of styling and organizing your css. It was written by Jonathan Snook and is freely available on-line.</p>
 						<p>Get the free SMACS Online book at <a href="https://smacss.com">SMACSS.com</a></p>
 						<img src="img/smacs.png" class="no-shadow">
 					</section>
-				</section><!-- END What is SMACSS and SASS -->
-
-				<!-- 	SMACSS      -->
-				<section>
-					
 
 					<section >
 						<h2>Categories of SMACSS</h2>
@@ -195,62 +268,7 @@
 							pause for questions 
 						</aside>
 					</section>
-
-					<section>
-						<h2>Time to get Sassy!</h2>
-						<img src="img/sassy.gif">
-					</section>
 				</section><!-- 	SMACSS       -->
-				
-				<!-- SASS -->
-				<section>
-					<section>
-						<h2>The SASS Folder Structure</h2>
-						<ul>
-							<li class="fragment">Global: <span class="fragment"> Your global layout including typography, base form styles, and html elements</span></li>
-							<li class="fragment">Components: <span class="fragment">Your modules, states, and section layouts</span></li>
-							<li class="fragment">Base: <span class="fragment">Your Variables, Mixins, Extendables, and Vendor style sheets (normalize, formalize, reset ect bold</span></li>
-						</ul>
-						<aside class="notes">
-							at this point, pull up project and show them folder structure in a project
-						</aside>
-					</section>
-
-					<section>
-						<h2>Global</h2>
-						<p></p>
-					</section>
-
-					<section>
-						<h2>Components</h2>
-					</section>
-
-					<section>
-						<h2>Base</h2>
-					</section>
-
-					<section>
-						<h2>Breaking down a site</h2>
-						<img src="">
-					</section>
-
-					<section>
-						<h2>Work Point</h2>
-						<p>Sass requires an installation process as well a compiler such as gulp or grunt to run.  To save time we will be using Cloud 9 to spin up an environment with all the dependencies we will need.</p>
-					</section>
-					<section>
-						<ul>
-							<li>
-								Head to <a href="https://c9.io">c9.io</a> and sign up for a free account
-							</li>
-							<li>Fork and clone the <a href="https://github.com/sirjessthebrave/minimal-site">'Minimal Site'</a> repo from my Git Hub account</li>
-							<li>Open up the project in your Cloud9 account and make a change to the SASS files</li>
-							<li>Run the following command in your terminal: sass sass/style.scss stylesheets/style.css</li>
-							<li>Celebrate!</li>
-							<img src="http://i.imgur.com/Cp62j1q.gif" style="margin: 0 auto; display: block;">
-						</ul>
-					</section>
-				</section><!-- END SASS -->
 				
 				<!-- RESOURCES -->
 				<section>
