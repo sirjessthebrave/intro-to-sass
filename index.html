@@ -110,7 +110,6 @@
 					
 					<section>
 						<p>SASS takes your .SCSS files, and compiles them into a normal css style sheet to be included in your project. </p>
-						<p>Demo: How Sass Compiles</p>
 					</section>
 
 					<section>
@@ -128,9 +127,12 @@
 					<section>
 						<h2>The SASS Folder Structure</h2>
 						<ul>
-							<li class="fragment">Global: <span class="fragment"> Your global layout including typography, base form styles, and html elements</span></li>
-							<li class="fragment">Components: <span class="fragment">Your modules, states, and section layouts</span></li>
-							<li class="fragment">Base: <span class="fragment">Your Variables, Mixins, Extendables, and Vendor style sheets (normalize, formalize, reset ect bold</span></li>
+							<li class="fragment"><img
+							src="img/folder.png" class="folder">Global: <span class="fragment"> Your global layout including typography, base form styles, and html elements</span></li>
+							<li class="fragment"><img
+							src="img/folder.png" class="folder">Components: <span class="fragment">Your modules, states, and section layouts</span></li>
+							<li class="fragment"><img
+							src="img/folder.png" class="folder">Base: <span class="fragment">Your Variables, Mixins, Extendables, and Vendor style sheets (normalize, formalize, reset ect bold</span></li>
 						</ul>
 						<aside class="notes">
 							at this point, pull up project and show them folder structure in a project
@@ -140,10 +142,47 @@
 						<h2>How SASS works</h2>
 						<ul>
 							<li>Partials</li>
+							<li>Variables, Mixins, Extendables</li>
 							<li>Compiling</li>
 							<li>Import partial</li>
 							<li>Output Style sheet</li>
 						</ul>
+						<h3>Demo: How Sass Compiles</h3>
+					</section>
+
+					<section  data-markdown>]
+						<script type="text/template">
+						## SCSS => CSS
+
+						```
+						<section data-markdown>
+						  ## SASS
+
+						  .article-wrapper {
+						  	background-color: #ffffff;
+
+						  	.article-text {
+						  	  color: #333;
+						  	  &.article-link {
+						  	  	color: #000;
+						  	  }
+						  	 }
+						  	}
+
+						  ## CSS
+
+						  .article-wrapper {
+						  	background-color: #ffffff;
+						  }
+						  .article-wrapper .article-text {
+						  	color: #333;
+						  }
+						  .article-wrapper a.article-text {
+						  	color: #000;
+						  }
+						</section>
+						```
+						</script>
 					</section>
 
 					<section>
